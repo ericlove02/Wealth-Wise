@@ -1,13 +1,25 @@
-// prob doesn't work with dynamic pages
+const axios = require("axios");
+const cheerio = require("cheerio");
 
-const axios = require('axios');
-const cheerio = require('cheerio')
-const url = 'https://www.retailmenot.com/?u=4R6M5JDZFNEJZP5W7NQ6WVAYX4';
-    axios(url)
-        .then(response => {
-            const html = response.data;
-            const $ = cheerio.load(html)
-            const salePrice = $('CopyCode__Code-sc-10h0ylz-2 cVSRcS').text()
-            console.log(salePrice);
-        })
-        .catch(console.error);
+const fetchPromos = async () => {
+    try {
+        const response = await axios.get('https://simplycodes.com/feature/common-coupon-phrases');
+
+        const html = response.data;
+
+        const $ = cheerio.load(html);
+
+        const promos = [];
+
+        $('div.codepill--feature > \n').each((_idx, el) => {
+            const promo = $(el).text()
+            promos.push(promo);
+        });
+
+        return html;
+    } catch (error) {
+        throw error;
+    }
+};
+
+fetchPromos().then((promo) => console.log(promo));
