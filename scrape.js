@@ -17,7 +17,7 @@ const fetchCouponsSimplyCodes = async () => {
             const coupon = $(el).text() // type string
             // console.log(typeof coupon);
             const tempArr = coupon.split("\n");
-            if (tempArr[1]) {     
+            if (tempArr[1]) {
                 coupons.push(tempArr[1].trim())
             }
         });
