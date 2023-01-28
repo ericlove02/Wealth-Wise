@@ -9,8 +9,20 @@ body {
     display: none;
 }
 
+#onb1,
+#onb2,
+#onb3,
+#onb4,
+#onb5,
+#onb6,
+#onb7 {
+    background-image: url("https://preview.colorlib.com/theme/bootstrap/login-form-20/images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .form-control {
-    border-radius: 0;
     border: none;
     height: 50px;
     color: white !important;
@@ -29,7 +41,6 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #495057 !important;
-    background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -37,4 +48,11 @@ body {
     -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control:hover {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.4);
 }
