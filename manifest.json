@@ -21,7 +21,9 @@
             "js": [
                 "content.js"
             ],
-            "matches": []
+            "matches": [
+                "https://www.amazon.com/gp/buy/spc/handlers/display.html*"
+            ]
         }
     ]
 }
