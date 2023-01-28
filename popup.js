@@ -6,12 +6,12 @@ window.onload = async function main() {
     if (await getStorage("onboardingStatus")) {
 
     } else {
-        pageRewrite("onb1", "onb2", "onb-next1");
-        pageRewrite("onb2", "onb3", "onb-next2");
-        pageRewrite("onb3", "onb4", "onb-next3");
-        pageRewrite("onb4", "onb5", "onb-next4");
-        pageRewrite("onb5", "onb6", "onb-next5");
-        pageRewrite("onb6", "onb7", "onb-next6");
+        pageRewrite("", "onb1", "onb2", "", "onb-next1");
+        pageRewrite("onb1", "onb2", "onb3", "", "onb-next2");
+        pageRewrite("onb2", "onb3", "onb4", "", "onb-next3");
+        pageRewrite("onb3", "onb4", "onb5", "", "onb-next4");
+        pageRewrite("onb4", "onb5", "onb6", "", "onb-next5");
+        pageRewrite("onb5", "onb6", "onb7", "", "onb-next6");
     }
 }
 
@@ -35,10 +35,17 @@ function setOnboardingStatus(value) {
     });
 }
 
-function pageRewrite(curr, dest, butt) {
-    document.getElementById(butt).addEventListener("click", () => {
-        document.getElementById(curr).classList.add('hide-div');
-        document.getElementById(dest).classList.remove('hide-div');
-        return;
-    })
+function pageRewrite(last, curr, next, bacbutt, forbutt) {
+    if (forbutt != "" && next != "") {
+        document.getElementById(forbutt).addEventListener("click", () => {
+            document.getElementById(curr).classList.add('hide-div');
+            document.getElementById(next).classList.remove('hide-div');
+        });
+    }
+    if (bacbutt != "" && last != "") {
+        document.getElementById(bacbutt).addEventListener("click", () => {
+            document.getElementById(curr).classList.add('hide-div');
+            document.getElementById(last).classList.remove('hide-div');
+        });
+    }
 }
