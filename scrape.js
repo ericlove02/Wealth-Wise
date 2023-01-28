@@ -1,24 +1,37 @@
-// prob doesn't work with dynamic pages
-
-// const axios = require('axios');
-// const cheerio = require('cheerio')
-// const url = 'https://simplycodes.com/feature/common-coupon-phrases';
-//     axios(url)
-//         .then(response => {
-//             const html = response.data;
-//             const $ = cheerio.load(html)
-//             const salePrice = $('.dnone').text()
-//             console.log(typeof salePrice);
-//             // console.log(salePrice);
-//         })
-//         .catch(console.error);
-
 const axios = require("axios");
 const cheerio = require("cheerio");
 
+// Simply Codes
+
+// const fetchCouponsSimplyCodes = async () => {
+//     try {
+//         const response = await axios.get('https://simplycodes.com/feature/common-coupon-phrases');
+
+//         const html = response.data;
+
+//         const $ = cheerio.load(html);
+
+//         const coupons = [];
+
+//         $('.dnone').each((_idx, el) => {
+//             const coupon = $(el).text() // type string
+//             // console.log(typeof coupon);
+//             const tempArr = coupon.split("\n");
+//             if (tempArr[1]) {     
+//                 coupons.push(tempArr[1].trim())
+//             }
+//         });
+//         return coupons;
+//     } catch (error) {
+//         throw error;
+//     }
+// };
+
+// fetchCouponsSimplyCodes().then((info) => console.log(info));
+
 const fetchCoupons = async () => {
     try {
-        const response = await axios.get('https://simplycodes.com/feature/common-coupon-phrases');
+        const response = await axios.get('https://www.retailmenot.com/?u=AXLI4ZPI35C5XPZFZ3F4HDLGPA');
 
         const html = response.data;
 
@@ -26,7 +39,7 @@ const fetchCoupons = async () => {
 
         const coupons = [];
 
-        $('.dnone').each((_idx, el) => {
+        $('.RedemptionModalContent__RedemptionBody-sc-1c3tlo0-3.jGMPPB').each((_idx, el) => {
             const coupon = $(el).text() // type string
             // console.log(typeof coupon);
             const tempArr = coupon.split("\n");
