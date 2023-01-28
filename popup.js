@@ -1,5 +1,13 @@
 window.onload = async function main() {
+    // add the event listeners to the buttons
 
+
+    if (await getStorage("onboardingStatus")) {
+
+    } else {
+        pageRewrite("onb1", "onb2", "onb-next-1");
+
+    }
 }
 
 // get data from chrome storage
