@@ -1,0 +1,20 @@
+{
+  "name": "wealth-wise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericlove02/Wealth-Wise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericlove02/Wealth-Wise/issues"
+  },
+  "homepage": "https://github.com/ericlove02/Wealth-Wise#readme"
+}
