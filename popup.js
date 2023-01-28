@@ -1,12 +1,17 @@
 window.onload = async function main() {
     // add the event listeners to the buttons
 
+    document.getElementById("close-ext").addEventListener("click", () => { window.close(); return; });
 
     if (await getStorage("onboardingStatus")) {
 
     } else {
-        pageRewrite("onb1", "onb2", "onb-next-1");
-
+        pageRewrite("onb1", "onb2", "onb-next1");
+        pageRewrite("onb2", "onb3", "onb-next2");
+        pageRewrite("onb3", "onb4", "onb-next3");
+        pageRewrite("onb4", "onb5", "onb-next4");
+        pageRewrite("onb5", "onb6", "onb-next5");
+        pageRewrite("onb6", "onb7", "onb-next6");
     }
 }
 
