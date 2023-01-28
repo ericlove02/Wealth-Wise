@@ -7,11 +7,12 @@ window.onload = async function main() {
 
     } else {
         pageRewrite("", "onb1", "onb2", "", "onb-next1");
-        pageRewrite("onb1", "onb2", "onb3", "", "onb-next2");
-        pageRewrite("onb2", "onb3", "onb4", "", "onb-next3");
-        pageRewrite("onb3", "onb4", "onb5", "", "onb-next4");
-        pageRewrite("onb4", "onb5", "onb6", "", "onb-next5");
-        pageRewrite("onb5", "onb6", "onb7", "", "onb-next6");
+        pageRewrite("onb1", "onb2", "onb3", "onb-back2", "onb-next2");
+        pageRewrite("onb2", "onb3", "onb4", "onb-back3", "onb-next3");
+        pageRewrite("onb3", "onb4", "onb5", "onb-back4", "onb-next4");
+        pageRewrite("onb4", "onb5", "onb6", "onb-back5", "onb-next5");
+        pageRewrite("onb5", "onb6", "onb7", "onb-back6", "onb-next6");
+        pageRewrite("onb6", "onb7", "", "onb-back7", "");
     }
 }
 
