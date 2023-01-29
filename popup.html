@@ -16,28 +16,15 @@
         <div id="onb1" class="">
             <!-- Image and text -->
             <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img
-                        src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                        width="35" height="30" class="d-inline-block align-top"
-                        alt="">
-                    Wealth Wise
-                </a>
+                <img
+                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
+                    width="55" height="50" class="d-inline-block align-top"
+                    alt="">
                 <button type="button" class="btn-close d-inline-block align-top"
                     id="close-ext" aria-label="Close" style="margin-right:10px"></button>
             </nav>
 
             <h1>Welcome</h1>
-
-
-
-
-
-
-
-
-
-
             <!-- <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="100" height="100"/> -->
             <div class="form-group">
                 <label for="email">Email address</label>
@@ -150,10 +137,21 @@
                     aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             Almost there! Connect your bank.
-            <button id="plaid-connect" class="btn ">Connect with plaid</button>
-            <button id="man-bank" class="btn ">Connect bank
+            <button id="plaid-connectbutt" class="btn ">Connect with plaid</button>
+            <button id="man-bankbutt" class="btn ">Connect bank
                 manually</button>
-            <button id="onb-back6" class="btn btn-primary">Back</button>
+        </div>
+        <div id="man-bank" class="hide-div">
+            <div class="form-group">
+                <label for="inputAccountNumber">Account Number</label>
+                <input type="accountnumber" class="form-control"
+                    id="inputAccountNumber" placeholder="Account Number">
+            </div>
+            <div class="form-group">
+                <label for="inputRouting">Routing Number</label>
+                <input type="routing" class="form-control"
+                    id="inputRouting" placeholder="Routing Number">
+            </div>
         </div>
         <div id="onb7" class="hide-div">
             <div class="progress">
@@ -163,8 +161,7 @@
                     aria-valuenow="20"
                     aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <button id="onb-back7" class="btn btn-primary">Back</button>
-            <button id="complete-onb" class="btn btn-primary">Close</button>
+            <button id="complete-onb" class="btn btn-primary">Done</button>
         </div>
         <div id="home" class="hide-div">
             <button id="logout" class="btn btn-primary">Log Out</button>
