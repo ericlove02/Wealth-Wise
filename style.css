@@ -157,6 +157,12 @@ input:checked+.slider:before {
 
 }
 
+.onbdone {
+  position: absolute;
+  transform: translateX(+110%) translateY(30%);
+  scale: 1.5;
+}
+
 .form-row {
   margin: 0px 10px 10px 10px;
 }

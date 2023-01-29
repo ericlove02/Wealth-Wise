@@ -1,4 +1,4 @@
-const promoCodes = ["100OFF", "15OFF"];
+const promoCodes = ["100OFF", "15OFF", "HIFRIEND"];
 
 if (window.location.href.includes("amazon")) {
     var find = "total",
@@ -40,7 +40,6 @@ if (window.location.href.includes("amazon")) {
 
                         // clear the queue cause we have found what we need and are done
                         queue = "";
-
 
                     }
                     break;
