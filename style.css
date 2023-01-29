@@ -166,7 +166,7 @@ input:checked+.slider:before {
 }
 
 .holdings-text {
-  margin: 10px 6px;
+  margin: 10px 0px 10px 10px;
 }
 
 .holdings-switch {
