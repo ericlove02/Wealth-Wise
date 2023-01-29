@@ -304,14 +304,14 @@ input:checked+.slider:before {
   content: counter(num);
 }
 
-@keyframes counter {
+/* @keyframes counter {
   from {
     --num: 0;
   }
   to {
     --num: 100;
   }
-}
+} */
 
 /* lineup class and keyframes */
 .counter {
@@ -336,5 +336,11 @@ input:checked+.slider:before {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
   }
 }
