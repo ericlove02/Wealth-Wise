@@ -245,17 +245,17 @@ input:checked+.slider:before {
   border-radius: 0;
 }
 
-* {
+#tab-home * {
   font-family: helvetica, arial, sans-serif;
   font-size: 1.5rem;
 }
 
-body {
+#tab-home {
   perspective: 500px;
 }
 
 /* clear background */
-h2 {
+#tab-home h2 {
   text-align: center;
   padding: 16px;
   margin: 0;
@@ -272,21 +272,25 @@ h2 {
 } */
 
 /* lineup class and keyframes */
-.lineUp {
+#tab-home .lineUp {
   animation: 2s anim-lineUp ease-out;
 }
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
     transform: translateY(80%);
   }
+
   20% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
     transform: translateY(0%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0%);
