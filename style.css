@@ -130,7 +130,7 @@ input:checked+.slider:before {
   margin-top: 20px;
 }
 
-.btn-secondary {
+#man-bank {
   color: #000;
   background-color: #fff;
   border-color: gray;
