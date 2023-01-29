@@ -14,7 +14,8 @@ body {
 #onb4,
 #onb5,
 #onb6,
-#onb7 {
+#onb7,
+#man-bank {
   height: 100%;
   margin: 0;
   background-image: url("images/wealth_wise_logo.png");
@@ -163,4 +164,12 @@ input:checked+.slider:before {
 
 .form-floating {
   margin: 10px 14px;
+}
+
+.holdings-text {
+  margin: 10px 6px;
+}
+
+.holdings-switch {
+  margin: 14px 0;
 }
