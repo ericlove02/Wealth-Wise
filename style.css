@@ -23,7 +23,8 @@ body {
 #onb5,
 #onb6,
 #onb7,
-#man-bank {
+#man-bank,
+#tab-home {
   height: 100%;
   margin: 0;
   background-image: url("images/wealth_wise_logo.png");
@@ -275,12 +276,16 @@ input:checked+.slider:before {
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600');
 
 #tab-tag {
-  height: 455px;
+  height: 355px;
   overflow-y: auto;
 }
 
+#tab-home {
+  height: 345px;
+}
+
 #tab-account {
-  height: 455px;
+  height: 335px;
   overflow-y: auto;
 }
 
@@ -329,13 +334,13 @@ input:checked+.slider:before {
   margin: 10px 0px 0px 10px;
 }
 
-#tab-home {
+/* #tab-home {
   background-image: url("images/images.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 85%;
 
-}
+} */
 
 #tab-home .lineUp {
   font-family: 'Montserrat', sans-serif;
@@ -350,9 +355,9 @@ input:checked+.slider:before {
   text-align: center;
 }
 
-#tab-home {
+/* #tab-home {
   perspective: 500px;
-}
+} */
 
 /* clear background */
 #tab-home h2 {
@@ -361,140 +366,21 @@ input:checked+.slider:before {
   margin: 0;
 }
 
-/* lineup class and keyframes */
-#tab-home .lineUp {
-  animation: 2s anim-lineUp ease-out;
-}
 
-#tab-home .line2 {
-  animation: 3s anim-lineUp ease-out;
-}
 
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
 
-  20% {
-    opacity: 0;
-  }
 
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@property --num {
-  syntax: "<integer>";
-  initial-value: 69;
-  inherits: false;
-}
-
-.counter {
-  animation: counter 2s;
-  counter-reset: num var(--num);
-  font: 800 40px system-ui;
-  padding: 2rem;
+.invam {
+  margin: 20px auto;
+  width: 50%;
   text-align: center;
+  font-size: 36px;
+  font-weight: 600;
 }
 
-.counter::after {
-  content: counter(num);
-}
-
-.counter {
-  animation-delay: 2s;
-  animation: 4s anim-lineUp ease-in-out;
-}
-
-/* 
-@property --percent {
-  syntax: "<number>";
-  initial-value: 0;
-  inherits: false;
-}
-@property --temp {
-  syntax: "<number>";
-  initial-value: 0;
-  inherits: false;
-}
-@property --v1 {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-@property --v2 {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-} */
 
 
-.counter {
-  animation: counter 2s;
-  counter-reset: num var(--num);
-  font: 800 40px system-ui;
-  padding: 2rem;
-  text-align: center;
-}
 
-.counter::after {
-  content: counter(num);
-}
-
-.counter {
-  animation-delay: 2s;
-  animation: 4s anim-lineUp ease-in-out;
-}
-
-/* .counter {
-  font: 800 40px monospace;
-  padding: 2rem;
-  transition: --percent 1s;
-  --temp: calc(var(--percent) * 100);
-  --v1: max(var(--temp) - 0.5, 0);
-  --v2: max((var(--temp) - var(--v1)) * 100 - 0.5, 0);
-  counter-reset: v1 var(--v1) v2 var(--v2);
-}
-.counter::before {
-  content: counter(v1) "." counter(v2, decimal-leading-zero) "%";
-} */
-
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-
-  20% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-
-  from {
-    --num: 0;
-  }
-
-  to {
-    --num: 69;
-  }
-}
 
 .moneh {
   display: block;
@@ -502,8 +388,3 @@ input:checked+.slider:before {
   margin-right: auto;
   width: 50%;
 }
-
-/* #nbr{
-  font-size:62px;
-  margin:44px 0 0 0;
-} */

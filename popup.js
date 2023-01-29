@@ -41,6 +41,12 @@ window.onload = async function main() {
     document.getElementById("close-ext8").addEventListener("click", () => { window.close(); return; });
     document.getElementById("close-ext9").addEventListener("click", () => { window.close(); return; });
 
+    let invamt = await getStorage("investedTotal");
+    if (typeof invamt == 'undefined') {
+        invamt = "0.00";
+    }
+    document.getElementById("invest-amt").innerText = invamt;
+
     pageRewrite("tab-account", "tab-home", "tab-tag", "person-butt", "tag-butt");
     pageRewrite("tab-account", "tab-tag", "tab-home", "person-butt", "home-butt");
     pageRewrite("tab-tag", "tab-account", "tab-home", "tag-butt", "home-butt");
