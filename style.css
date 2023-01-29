@@ -246,6 +246,10 @@ input:checked+.slider:before {
   margin: auto;
 }
 
+.user-data {
+  margin-top: -12px;
+}
+
 .user-name {
   text-align: center;
   margin-top: 5px;
@@ -253,13 +257,16 @@ input:checked+.slider:before {
   font-weight: bolder;
 }
 
-.data-title {
-  border-bottom: rgb(70, 70, 70);
+.user-row {
+  border-bottom: gray;
+  border-bottom-style: solid;
+  border-width: 1px;
   margin-left: 10px;
+  margin-right: 10px;
   font-size: 14px;
 }
 
-.user-data {
+.user-info {
   margin-left: 18px;
   font-size: 16px;
 }
@@ -270,26 +277,7 @@ input:checked+.slider:before {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600');
-.mainbox{
-  width: 90%;
-  height: 50px;
-  margin: 5px 5%;
-  border: 2px solid black;
-  border-radius: 15px;
-}
 
-.innerbox{
-  display: inline-block;
-  font-size: medium;
-  font-weight: 800;
-  left: 0px;
-}
-
-.promocode {
-  color: white;
-  background-color: #1c712f;
-  width: 40%;
-}
 .acct-icon {
   margin: 10px 0px 0px 10px;
 }
@@ -369,6 +357,7 @@ input:checked+.slider:before {
   animation-delay: 2s;
   animation: 4s anim-lineUp ease-in-out;
 }
+
 /* 
 @property --percent {
   syntax: "<number>";
