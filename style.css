@@ -1,8 +1,9 @@
 html,
 body {
-  margin: 0;
+  margin: 0 !important;
   height: 100%;
   width: 100%;
+  border-radius: 5px
 }
 
 body {
@@ -239,6 +240,29 @@ input:checked+.slider:before {
   color: #28a745;
 }
 
+.bi-person-circle {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.user-name {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.data-title {
+  border-bottom: rgb(70, 70, 70);
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.user-data {
+  margin-left: 18px;
+  font-size: 16px;
+}
 
 .progress {
   margin: 0;
@@ -264,4 +288,111 @@ input:checked+.slider:before {
   color: white;
   background-color: #1c712f;
   width: 40%;
+}
+.acct-icon {
+  margin: 10px 0px 0px 10px;
+}
+
+#tab-home * {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#tab-home {
+  perspective: 500px;
+}
+
+/* clear background */
+#tab-home h2 {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+}
+
+/* crops animations that exceeds one line area */
+/* .line {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 0;
+  margin-bottom: 16px;
+} */
+
+/* lineup class and keyframes */
+#tab-home .lineUp {
+  animation: 2s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 69;
+  inherits: false;
+}
+
+.counter {
+  animation: counter 2s;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+
+.counter::after {
+  content: counter(num);
+}
+
+.counter {
+  /* animation-delay: 2s; */
+  animation: 4s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  from {
+    --num: 0;
+  }
+
+  to {
+    --num: 69;
+  }
 }

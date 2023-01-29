@@ -2,13 +2,33 @@ window.onload = async function main() {
     // add the event listeners to the buttons
     document.getElementById("complete-onb").addEventListener("click", () => {
         console.log("saving...");
-        setOnboardingStatus(true);
+        setStorage("onboardingStatus", true);
         return;
     });
     document.getElementById("logout").addEventListener("click", () => {
         console.log("saving...");
-        setOnboardingStatus(false);
+        setStorage("onboardingStatus", false);
         window.close();
+        return;
+    });
+    document.getElementById("onb-next1").addEventListener("click", () => {
+        setStorage("userEmail", document.getElementById("inputEmail").value);
+        return;
+    });
+    document.getElementById("onb-next2").addEventListener("click", () => {
+        setStorage("userName", document.getElementById("inputFname").value + " " + document.getElementById("inputLname").value);
+        return;
+    });
+    document.getElementById("onb-next2").addEventListener("click", () => {
+        setStorage("userDob", document.getElementById("inputDob").value);
+        return;
+    });
+    document.getElementById("onb-next3").addEventListener("click", () => {
+        setStorage("userAddress", document.getElementById("inputAdd").value + ", " + document.getElementById("inputCity").value + ", " + document.getElementById("inputState").value + " " + document.getElementById("inputZip").value);
+        return;
+    });
+    document.getElementById("onb-next3").addEventListener("click", () => {
+        setStorage("userPhone", document.getElementById("inputPhone").value);
         return;
     });
     document.getElementById("close-ext1").addEventListener("click", () => { window.close(); return; });
@@ -43,6 +63,15 @@ window.onload = async function main() {
     }
 }
 
+document.getElementById("person-butt").addEventListener("click", async () => {
+    console.log(await getStorage("userEmail"));
+    console.log(await getStorage("userName"));
+    console.log(await getStorage("userDob"));
+    console.log(await getStorage("userAddress"));
+    console.log(await getStorage("userPhone"));
+    return;
+});
+
 // get data from chrome storage
 const getStorage = async function (key) {
     return new Promise((resolve, reject) => {
@@ -57,10 +86,12 @@ const getStorage = async function (key) {
 };
 
 // set onboardingStatus chrome storage data
-function setOnboardingStatus(value) {
-    chrome.storage.sync.set({ "onboardingStatus": value }, function () {
-        console.log("Status saved");
-    });
+function setStorage(key, value) {
+    var storage = chrome.storage.sync;
+    var obj = {};
+    obj[key] = value;
+    storage.set(obj);
+    console.log("Status saved");
 }
 
 function pageRewrite(last, curr, next, bacbutt, forbutt) {
