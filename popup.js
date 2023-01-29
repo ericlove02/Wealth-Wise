@@ -11,16 +11,26 @@ window.onload = async function main() {
         window.close();
         return;
     });
-    // document.getElementById("onb-next1").addEventListener("click", () => {
-    //     console.log("saving..." + document.getElementById("floatingInputValue").value);
-    //     setStorage("userEmail", document.getElementById("floatingInputValue").value);
-    //     return;
-    // });
-    // document.getElementById("onb-next2").addEventListener("click", () => {
-    //     console.log("saving..." + document.getElementById("floatingInputValue").value);
-    //     setStorage("userName", document.getElementById("floatingInputValue").value);
-    //     return;
-    // });
+    document.getElementById("onb-next1").addEventListener("click", () => {
+        setStorage("userEmail", document.getElementById("inputEmail").value);
+        return;
+    });
+    document.getElementById("onb-next2").addEventListener("click", () => {
+        setStorage("userName", document.getElementById("inputFname").value + " " + document.getElementById("inputLname").value);
+        return;
+    });
+    document.getElementById("onb-next2").addEventListener("click", () => {
+        setStorage("userDob", document.getElementById("inputDob").value);
+        return;
+    });
+    document.getElementById("onb-next3").addEventListener("click", () => {
+        setStorage("userAddress", document.getElementById("inputAdd").value + ", " + document.getElementById("inputCity").value + ", " + document.getElementById("inputState").value + " " + document.getElementById("inputZip").value);
+        return;
+    });
+    document.getElementById("onb-next3").addEventListener("click", () => {
+        setStorage("userPhone", document.getElementById("inputPhone").value);
+        return;
+    });
     document.getElementById("close-ext1").addEventListener("click", () => { window.close(); return; });
     document.getElementById("close-ext2").addEventListener("click", () => { window.close(); return; });
     document.getElementById("close-ext3").addEventListener("click", () => { window.close(); return; });
