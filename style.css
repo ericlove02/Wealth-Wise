@@ -276,6 +276,27 @@ input:checked+.slider:before {
   border-radius: 0;
 }
 
+.mainbox {
+  width: 90%;
+  height: 50px;
+  margin: 5px 5%;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.innerbox {
+  display: inline-block;
+  font-size: medium;
+  font-weight: 800;
+  left: 0px;
+}
+
+.promocode {
+  color: white;
+  background-color: #1c712f;
+  width: 40%;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600');
 
 .acct-icon {
