@@ -1,5 +1,18 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
+const { Server } = require("socket.io");
+
+const express = require('express');
+const app = express();
+const http = require('http');
+const server = http.createServer(app);
+const io = new Server(server);
+
+/* Connects to the socket server */
+// var socket = io.connect('http://localhost:3002');
+// socket.on('connect', function() {
+// console.log('Client connected');
+// });
 
 // Simply Codes
 
