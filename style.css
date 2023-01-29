@@ -281,7 +281,7 @@ input:checked+.slider:before {
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600');
 
 #tab-tag {
-  height: 405px;
+  height: 455px;
   overflow-y: auto;
 }
 
