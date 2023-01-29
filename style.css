@@ -1,9 +1,9 @@
 html,
 body {
-  margin: 0!important;
+  margin: 0 !important;
   height: 100%;
   width: 100%;
-  border-radius: 2px
+  border-radius: 5px
 }
 
 body {
@@ -240,6 +240,29 @@ input:checked+.slider:before {
   color: #28a745;
 }
 
+.bi-person-circle {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.user-name {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.data-title {
+  border-bottom: rgb(70, 70, 70);
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.user-data {
+  margin-left: 18px;
+  font-size: 16px;
+}
 
 .progress {
   margin: 0;
@@ -247,6 +270,29 @@ input:checked+.slider:before {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+.mainbox{
+  width: 90%;
+  height: 50px;
+  margin: 5px 5%;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.innerbox{
+  display: inline-block;
+  font-size: medium;
+  font-weight: 800;
+  left: 0px;
+}
+
+.promocode {
+  color: white;
+  background-color: #1c712f;
+  width: 40%;
+}
+.acct-icon {
+  margin: 10px 0px 0px 10px;
+}
 
 #tab-home * {
   font-family: 'Montserrat', sans-serif;
@@ -264,6 +310,16 @@ input:checked+.slider:before {
   padding: 16px;
   margin: 0;
 }
+
+/* crops animations that exceeds one line area */
+/* .line {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 0;
+  margin-bottom: 16px;
+} */
 
 /* lineup class and keyframes */
 #tab-home .lineUp {
@@ -304,6 +360,7 @@ input:checked+.slider:before {
   padding: 2rem;
   text-align: center;
 }
+
 .counter::after {
   content: counter(num);
 }
@@ -366,9 +423,11 @@ input:checked+.slider:before {
     opacity: 1;
     transform: translateY(0%);
   }
+
   from {
     --num: 0;
   }
+
   to {
     --num: 69;
   }
