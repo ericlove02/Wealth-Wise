@@ -23,9 +23,34 @@
     <img src='../images/saving-popup.gif' height='200' width='200'
         style='margin-left:50px;'/>
     Wealth Wise has coupons for this site!
-    <button class='btn btn-primary'>Invest & Save</button>
+    <button class='btn btn-primary' id='investbutt'>Invest & Save</button>
     <button class='btn btn-primary' id='closePopup'>No thanks</button>
     <script type='application/javascript'>
+        document.getElementById('investbutt').addEventListener('butt', async () => {
+        setStorage('investedTotal', await getStorage('investedTotal'));
+        return;
+    });
         document.getElementById('closePopup').addEventListener('click', () => { window.close(); return; });
+
+        // get data from chrome storage
+    const getStorage = async function (key) {
+        return new Promise((resolve, reject) => {
+            try {
+                chrome.storage.sync.get(key, function (value) {
+                    resolve(value[key]);
+                });
+            } catch (ex) {
+                reject(ex);
+            }
+        });
+    };
+
+// set onboardingStatus chrome storage data
+    function setStorage(key, value) {
+    var storage = chrome.storage.sync;
+    var obj = {};
+    obj[key] = value;
+    storage.set(obj);
+}
     </script>
 </div>
