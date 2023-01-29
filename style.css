@@ -221,20 +221,15 @@ input:checked+.slider:before {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 10px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .navbar .nav-item:hover {
-  background-color: #ddd;
-  color: black;
+  color: #28a745;
 }
 
-.navbar .nav-item.active {
-  background-color: #04AA6D;
-  color: white;
-}
 
 .progress {
   margin: 0;

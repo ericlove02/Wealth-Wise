@@ -21,6 +21,10 @@ window.onload = async function main() {
     document.getElementById("close-ext8").addEventListener("click", () => { window.close(); return; });
     document.getElementById("close-ext9").addEventListener("click", () => { window.close(); return; });
 
+    pageRewrite("tab-account", "tab-home", "tab-tag", "person-butt", "tag-butt");
+    pageRewrite("tab-account", "tab-tag", "tab-home", "person-butt", "home-butt");
+    pageRewrite("tab-tag", "tab-account", "tab-home", "tag-butt", "home-butt");
+
     if (await getStorage("onboardingStatus")) {
         document.getElementById("onb1").classList.add('hide-div'); // hide welcome div
         document.getElementById("home").classList.remove('hide-div'); // show the info div
