@@ -173,6 +173,11 @@ input:checked+.slider:before {
   margin: 14px 0;
 }
 
+.holdings-switch:last-child,
+.holdings-text:last-child {
+  margin: inherit inherit 0;
+}
+
 .onboard.form-floating>.form-control,
 .onboard.form-floating>.form-control-plaintext {
   padding: 0rem 0.75rem -.25rem;
