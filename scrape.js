@@ -27,10 +27,18 @@ const fetchCouponsSimplyCodes = async () => {
             // console.log(saving);
             savings.push(saving);
         });
-        return coupons;
+
+        const out = [];
+        let index = 0;
+
+        coupons.forEach((coupon) => {
+            out[index] = coupon + " " + savings[index];
+            index++;
+        });
+        return out;
     } catch (error) {
         throw error;
     }
 };
 
-fetchCouponsSimplyCodes().then((info) => console.log(info));
+fetchCouponsSimplyCodes().then((info1, info2) => console.log(info1 + " " + info2));
