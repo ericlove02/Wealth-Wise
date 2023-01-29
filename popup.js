@@ -11,7 +11,7 @@ window.onload = async function main() {
         window.close();
         return;
     });
-    // document.getElementById("close-ext").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext").addEventListener("click", () => { window.close(); return; });
 
     if (await getStorage("onboardingStatus")) {
         document.getElementById("onb1").classList.add('hide-div'); // hide welcome div
