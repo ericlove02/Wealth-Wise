@@ -23,7 +23,8 @@
             ],
             "matches": [
                 "https://www.amazon.com/gp/buy/spc/handlers/display.html*",
-                "https://secure.asos.com/us/*"
+                "https://www.papajohns.com/order/view-cart/*",
+                "https://www.papajohns.com/order/view-cart?promoNotification=true&promoCode=PEPSI25"
             ]
         }
     ]
