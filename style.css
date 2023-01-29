@@ -130,8 +130,8 @@ input:checked+.slider:before {
   margin-top: 20px;
 }
 
-#plaid-connect,
-#man-bank {
+#plaid-connectbutt,
+#man-bankbutt {
   color: #000;
   background-color: #fff;
   border-color: gray;
@@ -140,8 +140,8 @@ input:checked+.slider:before {
   border-radius: 0;
 }
 
-#plaid-connect:hover,
-#man-bank:hover {
+#plaid-connectbutt:hover,
+#man-bankbutt:hover {
   background-color: gray;
   color: white;
   border-color: lightgray;

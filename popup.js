@@ -24,6 +24,7 @@ window.onload = async function main() {
         pageRewrite("onb3", "onb4", "onb5", "onb-back4", "onb-next4");
         pageRewrite("onb4", "onb5", "onb6", "onb-back5", "onb-next5");
         pageRewrite("onb5", "onb6", "onb7", "onb-back6", "");
+        pageRewrite("", "onb6", "", "", "");
         pageRewrite("onb6", "onb7", "", "onb-back7", "");
     }
 }
