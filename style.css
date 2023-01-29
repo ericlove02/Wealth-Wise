@@ -129,10 +129,18 @@ input:checked+.slider:before {
 
 }
 
+.form-group {
+  margin: 20px 10px;
+}
+
 .btn:hover,
 .btn-primary:hover {
   color: #fff;
   background-color: #1c712f;
   border-color: #1c712f;
 
+}
+
+.form-row {
+  margin: 0px 10px 10px 10px;
 }
