@@ -165,3 +165,11 @@ input:checked+.slider:before {
 .form-floating {
   margin: 10px 14px;
 }
+
+.holdings-text {
+  margin: 10px 6px;
+}
+
+.holdings-switch {
+  margin: 14px 0;
+}
