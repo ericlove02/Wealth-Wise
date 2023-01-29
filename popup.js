@@ -62,14 +62,13 @@ window.onload = async function main() {
 
     }
 }
-// change
 
 document.getElementById("person-butt").addEventListener("click", async () => {
-    console.log(await getStorage("userEmail"));
-    console.log(await getStorage("userName"));
-    console.log(await getStorage("userDob"));
-    console.log(await getStorage("userAddress"));
-    console.log(await getStorage("userPhone"));
+    document.getElementById("user-email").innerText = await getStorage("userEmail");
+    document.getElementById("user-name").innerText = await getStorage("userName");
+    document.getElementById("user-dob").innerText = await getStorage("userDob");
+    document.getElementById("user-add").innerText = await getStorage("userAddress");
+    document.getElementById("user-phone").innerText = await getStorage("userPhone");
     return;
 });
 
