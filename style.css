@@ -247,8 +247,9 @@ input:checked+.slider:before {
 }
 
 #tab-home * {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 #tab-home {
@@ -295,5 +296,56 @@ input:checked+.slider:before {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 69;
+  inherits: false;
+}
+
+.counter {
+  animation: counter 2s;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+
+.counter::after {
+  content: counter(num);
+}
+
+.counter {
+  /* animation-delay: 2s; */
+  animation: 4s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  from {
+    --num: 0;
+  }
+
+  to {
+    --num: 69;
   }
 }
