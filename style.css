@@ -53,7 +53,6 @@ body {
 } */
 
 .form-control:hover {
-  background: transparent;
   box-shadow: none;
 }
 
@@ -172,4 +171,20 @@ input:checked+.slider:before {
 
 .holdings-switch {
   margin: 14px 0;
+}
+
+.onboard.form-floating>.form-control,
+.onboard.form-floating>.form-control-plaintext {
+  padding: 0rem 0.75rem;
+}
+
+.onboard.form-floating>.form-control,
+.onboard.form-floating>.form-control-plaintext,
+.onboard.form-floating>.form-select {
+  height: calc(2.5rem + 2px);
+  line-height: 1;
+}
+
+.onboard.form-floating>label {
+  padding: 0.5rem 0.75rem;
 }
