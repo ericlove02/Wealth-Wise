@@ -1,13 +1,15 @@
+const promoCodes = ["100OFF", "15OFF"];
+
 var find = "total",
     queue = [document.body],
     curr;
 while (curr = queue.pop()) {
-    if (!curr.textContent.includes(word)) continue;
+    if (!curr.textContent.includes(find)) continue;
     for (var i = 0; i < curr.childNodes.length; ++i) {
         switch (curr.childNodes[i].nodeType) {
             case Node.TEXT_NODE: // 3
-                if (curr.childNodes[i].textContent.includes(word)) {
-                    console.log("This page contains " + word);
+                if (curr.childNodes[i].textContent.includes(find)) {
+                    console.log("This page contains " + find);
 
                     var totalText = document.getElementsByClassName('grand-total-price')[0];
                     if (totalText) {
@@ -20,13 +22,17 @@ while (curr = queue.pop()) {
                         console.log("Total saved");
                     });
 
+                    promoCodes.forEach((code) => {
+                        console.log(code);
+                    });
+
                     let promoCodeInput = document.getElementById('spc-gcpromoinput');
                     promoCodeInput.value = "XXX";
                     let promoCodeButton = document.getElementById('gcApplyButtonId');
-                    // promoCodeButton.click();
+                    promoCodeButton.click();
 
                     // HTML of the popup that will show when the content is found
-                    var popupHTML = "<div style='position:fixed;top:0;right:0;z-index:999;color:red'>MONKEYS COULD USE YOUR " + total + " INSTEAD</div>";
+                    var popupHTML = "<div style='position:fixed;top:0;right:0;z-index:999;color:red'>DETECTED " + total + "</div>";
 
                     var stack = document.getElementsByTagName('body')[0];
                     stack.insertAdjacentHTML('beforeend', popupHTML);
