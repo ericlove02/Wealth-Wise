@@ -63,6 +63,15 @@ window.onload = async function main() {
     }
 }
 
+document.getElementById("person-butt").addEventListener("click", async () => {
+    console.log(await getStorage("userEmail"));
+    console.log(await getStorage("userName"));
+    console.log(await getStorage("userDob"));
+    console.log(await getStorage("userAddress"));
+    console.log(await getStorage("userPhone"));
+    return;
+});
+
 // get data from chrome storage
 const getStorage = async function (key) {
     return new Promise((resolve, reject) => {
