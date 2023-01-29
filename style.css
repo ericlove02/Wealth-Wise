@@ -239,8 +239,35 @@ input:checked+.slider:before {
   color: #28a745;
 }
 
+.bi-person-circle {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.user-name {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.data-title {
+  border-bottom: rgb(70, 70, 70);
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.user-data {
+  margin-left: 18px;
+  font-size: 16px;
+}
 
 .progress {
   margin: 0;
   border-radius: 0;
+}
+
+.acct-icon {
+  margin: 10px 0px 0px 10px;
 }
