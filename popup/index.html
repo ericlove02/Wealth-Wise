@@ -24,5 +24,8 @@
         style='margin-left:50px;'/>
     Wealth Wise has coupons for this site!
     <button class='btn btn-primary'>Invest & Save</button>
-    <button class='btn btn-primary'>No thanks</button>
+    <button class='btn btn-primary' id='closePopup'>No thanks</button>
+    <script type='application/javascript'>
+        document.getElementById('closePopup').addEventListener('click', () => { window.close(); return; });
+    </script>
 </div>
