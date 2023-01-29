@@ -11,7 +11,15 @@ window.onload = async function main() {
         window.close();
         return;
     });
-    document.getElementById("close-ext").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext1").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext2").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext3").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext4").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext5").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext6").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext7").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext8").addEventListener("click", () => { window.close(); return; });
+    document.getElementById("close-ext9").addEventListener("click", () => { window.close(); return; });
 
     if (await getStorage("onboardingStatus")) {
         document.getElementById("onb1").classList.add('hide-div'); // hide welcome div

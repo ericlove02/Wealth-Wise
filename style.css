@@ -208,6 +208,13 @@ input:checked+.slider:before {
   width: 100%;
 }
 
+.nav-override {
+  width: 100% !important;
+  float: none !important;
+  position: initial !important;
+  background-color: #ededed !important;
+}
+
 .navbar .nav-item {
   width: 33%;
   float: left;
@@ -227,4 +234,9 @@ input:checked+.slider:before {
 .navbar .nav-item.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.progress {
+  margin: 0;
+  border-radius: 0;
 }
