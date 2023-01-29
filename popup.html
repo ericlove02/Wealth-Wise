@@ -65,7 +65,7 @@
                 placeholder="Zip Code" value=""> <label for="floatingInputValue">Zip Code</label> </form>
         <h6 style="margin: 20px 15px 0px 15px;">Phone Number</h6>
         <form class="form-floating"> <input type="phone" class="form-control" id="floatingInputValue"
-                placeholder="(XXX)-XXX-XXXX" value=""> <label for="floatingInputValue">(XXX)-XXX-XXXX</label> </form>
+                placeholder="(xxx)-xxx-xxxx" value=""> <label for="floatingInputValue">(xxx)-xxx-xxxx</label> </form>
 
         <button id="onb-back3" class="btn btn-primary">Back</button>
         <button id="onb-next3" class="btn btn-primary">Next</button>
@@ -149,15 +149,11 @@
             manually</button>
     </div>
     <div id="man-bank" class="hide-div">
-        <div class="form-group">
-            <label for="inputAccountNumber">Account
-                Number</label>
-            <input type="accountnumber" class="form-control" id="inputAccountNumber" placeholder="Account Number">
-        </div>
-        <div class="form-group">
-            <label for="inputRouting">Routing Number</label>
-            <input type="routing" class="form-control" id="inputRouting" placeholder="Routing Number">
-        </div>
+        <h6 style="margin: 20px 15px 0px 15px;">Banking Information</h6>
+        <form class="form-floating"> <input type="accountNum" class="form-control" id="floatingInputValue"
+                placeholder="Account Number" value=""> <label for="floatingInputValue">Account Number</label> </form>
+        <form class="form-floating"> <input type="routingNum" class="form-control" id="floatingInputValue"
+                placeholder="Routing Number" value=""> <label for="floatingInputValue">Routing Number</label> </form>
         <button id="con-man-bank" class="btn
             btn-primary">Confirm</button>
     </div>
