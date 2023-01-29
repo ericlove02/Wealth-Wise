@@ -1,4 +1,4 @@
-const promoCodes = ["100OFF", "15OFF"];
+const promoCodes = ["100OFF" , "15OFF" , "HIFRIEND"];
 
 var find = "total",
     queue = [document.body],
@@ -23,13 +23,17 @@ while (curr = queue.pop()) {
                     });
 
                     promoCodes.forEach((code) => {
-                        console.log(code);
+                        // console.log(code);
+                        let promoCodeInput = document.getElementById('spc-gcpromoinput');
+                        promoCodeInput.value = code;
+                        let promoCodeButton = document.getElementById('gcApplyButtonId');
+                        promoCodeButton.click();
                     });
 
-                    let promoCodeInput = document.getElementById('spc-gcpromoinput');
-                    promoCodeInput.value = "XXX";
-                    let promoCodeButton = document.getElementById('gcApplyButtonId');
-                    promoCodeButton.click();
+                    // let promoCodeInput = document.getElementById('spc-gcpromoinput');
+                    // promoCodeInput.value = "XXX";
+                    // let promoCodeButton = document.getElementById('gcApplyButtonId');
+                    // promoCodeButton.click();
 
                     // HTML of the popup that will show when the content is found
                     var popupHTML = "<div style='position:fixed;top:0;right:0;z-index:999;color:red'>DETECTED " + total + "</div>";
