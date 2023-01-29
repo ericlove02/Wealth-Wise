@@ -24,7 +24,7 @@ window.onload = async function main() {
         return;
     });
     document.getElementById("onb-next3").addEventListener("click", () => {
-        setStorage("userAddress", document.getElementById("inputAdd").value + ", " + document.getElementById("inputCity").value + ", " + document.getElementById("inputState").value + " " + document.getElementById("inputZip").value);
+        setStorage("userAddress", document.getElementById("inputAdd").value + "\n" + document.getElementById("inputCity").value + ", " + document.getElementById("inputState").value + " " + document.getElementById("inputZip").value);
         return;
     });
     document.getElementById("onb-next3").addEventListener("click", () => {
