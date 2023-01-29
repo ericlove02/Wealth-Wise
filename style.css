@@ -337,9 +337,9 @@ input:checked+.slider:before {
 
 #tab-home {
   background-image: url("images/images.jpg");
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 85%;
 
 }
 
@@ -363,7 +363,7 @@ input:checked+.slider:before {
 /* clear background */
 #tab-home h2 {
   text-align: center;
-  padding: 16px;
+  /* padding: 16px; */
   margin: 0;
 }
 
