@@ -335,10 +335,25 @@ input:checked+.slider:before {
   margin: 10px 0px 0px 10px;
 }
 
-#tab-home * {
+#tab-home {
+  background-image: url("images/images.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#tab-home .lineUp {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+#tab-home .line2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.0rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 #tab-home {
@@ -355,6 +370,10 @@ input:checked+.slider:before {
 /* lineup class and keyframes */
 #tab-home .lineUp {
   animation: 2s anim-lineUp ease-out;
+}
+
+#tab-home .line2 {
+  animation: 3s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
