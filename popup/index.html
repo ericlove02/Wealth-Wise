@@ -18,11 +18,56 @@
         rel='stylesheet'
         integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC'
         crossorigin='anonymous'>
+    <style>
+        .btn,
+        .btn-primary {
+        color: #fff;
+        background-color: #28a745;
+        border-color: #1c712f;
+        margin-left: 10px;
+        margin-top: 10px;
+        }
+        .btn:hover,
+        .btn-primary:hover {
+        color: #fff;
+        background-color: #1c712f;
+        border-color: #1c712f;
+
+        }
+    </style>
     <img src='../images/icon-128.png' height='50' width='50'
         style='margin-left:6px;'/>
-    <img src='../images/saving-popup.gif' height='200' width='200'
+    <img src='../images/saving-popup.gif' height='190' width='190'
         style='margin-left:50px;'/>
-    <h2 style='font-family:Arial, Helvetica, sans-serif; text-align: center; font-size: 1.25rem; font-weight: bold;'>Wealth Wise has coupons for this site!</h2>
-    <button class='btn btn-primary' style='background-color:#28a745; border-color: #28a745; margin-left: 39px;'>Invest & Save</button>
-    <button class='btn btn-primary' style='background-color:#28a745; border-color: #28a745;'>No thanks</button>
+        <h2 style='font-family:Arial, Helvetica, sans-serif; text-align: center; font-size: 1.25rem; font-weight: bold;'>Wealth Wise has coupons for this site!</h2>
+        <button class='btn btn-primary' style='background-color:#28a745; border-color: #28a745; margin-left: 39px;'>Invest & Save</button>
+        <button class='btn btn-primary' style='background-color:#28a745; border-color: #28a745;'>No thanks</button>
+    <script type='application/javascript'>
+        document.getElementById('investbutt').addEventListener('butt', async () => {
+        setStorage('investedTotal', await getStorage('investedTotal'));
+        return;
+    });
+        document.getElementById('closePopup').addEventListener('click', () => { window.close(); return; });
+
+        // get data from chrome storage
+    const getStorage = async function (key) {
+        return new Promise((resolve, reject) => {
+            try {
+                chrome.storage.sync.get(key, function (value) {
+                    resolve(value[key]);
+                });
+            } catch (ex) {
+                reject(ex);
+            }
+        });
+    };
+
+// set onboardingStatus chrome storage data
+    function setStorage(key, value) {
+    var storage = chrome.storage.sync;
+    var obj = {};
+    obj[key] = value;
+    storage.set(obj);
+}
+    </script>
 </div>
