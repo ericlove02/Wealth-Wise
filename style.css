@@ -247,10 +247,6 @@ input:checked+.slider:before {
   margin: auto;
 }
 
-.user-data {
-  margin-top: -12px;
-}
-
 .user-name {
   text-align: center;
   margin-top: 5px;
@@ -286,6 +282,11 @@ input:checked+.slider:before {
 
 #tab-tag {
   height: 405px;
+  overflow-y: auto;
+}
+
+#tab-account {
+  height: 355px;
   overflow-y: auto;
 }
 
