@@ -11,6 +11,16 @@ window.onload = async function main() {
         window.close();
         return;
     });
+    // document.getElementById("onb-next1").addEventListener("click", () => {
+    //     console.log("saving..." + document.getElementById("floatingInputValue").value);
+    //     setStorage("userEmail", document.getElementById("floatingInputValue").value);
+    //     return;
+    // });
+    // document.getElementById("onb-next2").addEventListener("click", () => {
+    //     console.log("saving..." + document.getElementById("floatingInputValue").value);
+    //     setStorage("userName", document.getElementById("floatingInputValue").value);
+    //     return;
+    // });
     document.getElementById("close-ext1").addEventListener("click", () => { window.close(); return; });
     document.getElementById("close-ext2").addEventListener("click", () => { window.close(); return; });
     document.getElementById("close-ext3").addEventListener("click", () => { window.close(); return; });
