@@ -247,8 +247,9 @@ input:checked+.slider:before {
 }
 
 #tab-home * {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 #tab-home {
@@ -290,12 +291,12 @@ input:checked+.slider:before {
 
 @property --num {
   syntax: "<integer>";
-  initial-value: 100;
+  initial-value: 69;
   inherits: false;
 }
 
 .counter {
-  animation: counter 5s;
+  animation: counter 2s;
   counter-reset: num var(--num);
   font: 800 40px system-ui;
   padding: 2rem;
@@ -304,18 +305,9 @@ input:checked+.slider:before {
   content: counter(num);
 }
 
-/* @keyframes counter {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 100;
-  }
-} */
-
-/* lineup class and keyframes */
 .counter {
-  animation: 2s anim-lineUp ease-out;
+  /* animation-delay: 2s; */
+  animation: 4s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -341,6 +333,6 @@ input:checked+.slider:before {
     --num: 0;
   }
   to {
-    --num: 100;
+    --num: 69;
   }
 }
