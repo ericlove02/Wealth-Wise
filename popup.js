@@ -2,12 +2,12 @@ window.onload = async function main() {
     // add the event listeners to the buttons
     document.getElementById("complete-onb").addEventListener("click", () => {
         console.log("saving...");
-        setOnboardingStatus(true);
+        setStorage("onboardingStatus", true);
         return;
     });
     document.getElementById("logout").addEventListener("click", () => {
         console.log("saving...");
-        setOnboardingStatus(false);
+        setStorage("onboardingStatus", false);
         window.close();
         return;
     });
@@ -57,10 +57,12 @@ const getStorage = async function (key) {
 };
 
 // set onboardingStatus chrome storage data
-function setOnboardingStatus(value) {
-    chrome.storage.sync.set({ "onboardingStatus": value }, function () {
-        console.log("Status saved");
-    });
+function setStorage(key, value) {
+    var storage = chrome.storage.sync;
+    var obj = {};
+    obj[key] = value;
+    storage.set(obj);
+    console.log("Status saved");
 }
 
 function pageRewrite(last, curr, next, bacbutt, forbutt) {
