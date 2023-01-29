@@ -1,329 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wealth Wise</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Wise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <body>
-        <div id="onb1" class="">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext1" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <h6 style="margin: 10px 15px;">Create an Account</h6>
-            <form class="onboard form-floating"> <input type="email"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="name@example.com" value=""> <label
-                    for="floatingInputValue">Email</label> </form>
-            <form class="onboard form-floating"> <input type="password"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="Password" value=""> <label
-                    for="floatingInputValue">Password</label> </form>
-            <input class="form-check-input" type="checkbox" value=""
-                id="invalidCheck" required=""
-                style="margin: 15px 0px 0px 15px;">
-            <label class="form-check-label" for="invalidCheck" style="margin:
-                10px 10px 0px 5px;">
-                Agree to <a href="url">terms and conditions</a>
-            </label>
-            <button id="onb-next1" class="btn btn-primary">Next</button>
+<body>
+    <div id="onb1" class="">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext1" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <h6 style="margin: 10px 15px;">Create an Account</h6>
+        <form class="onboard form-floating"> <input type="email" class="form-control" id="floatingInputValue"
+                placeholder="name@example.com" value=""> <label for="floatingInputValue">Email</label> </form>
+        <form class="onboard form-floating"> <input type="password" class="form-control" id="floatingInputValue"
+                placeholder="Password" value=""> <label for="floatingInputValue">Password</label> </form>
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required=""
+            style="margin: 15px 0px 0px 15px;">
+        <label class="form-check-label" for="invalidCheck" style="margin:
+                10px 10px 10px 5px;">
+            Agree to <a href="url">terms and conditions</a>
+        </label>
+        <button id="onb-next1" class="btn btn-primary">Next</button>
+    </div>
+    <div id="onb2" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext2" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped
+                    progress-bar-animated bg-success" role="progressbar" style="width: 16%" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div id="onb2" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext2" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped
-                    progress-bar-animated bg-success" role="progressbar"
-                    style="width: 16%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h6 style="margin: 10px 15px;">Name</h6>
-            <form class="onboard form-floating"> <input type="last"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="Last Name" value=""> <label
-                    for="floatingInputValue">Last Name</label> </form>
-            <form class="onboard form-floating"> <input type="first"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="First Name" value=""> <label
-                    for="floatingInputValue">First Name</label> </form>
+        <h6 style="margin: 10px 15px;">Name</h6>
+        <form class="onboard form-floating"> <input type="last" class="form-control" id="floatingInputValue"
+                placeholder="Last Name" value=""> <label for="floatingInputValue">Last Name</label> </form>
+        <form class="onboard form-floating"> <input type="first" class="form-control" id="floatingInputValue"
+                placeholder="First Name" value=""> <label for="floatingInputValue">First Name</label> </form>
 
-            <h6 style="margin: 20px 15px 0px 15px;">Date of Birth</h6>
-            <form class="form-floating"> <input type="date" class="form-control"
-                    id="floatingInputValue" placeholder="DOB"
-                    value=""> <label for="floatingInputValue">DOB</label>
-            </form>
-            <button id="onb-back2" class="btn btn-primary">Back</button>
-            <button id="onb-next2" class="btn btn-primary">Next</button>
+        <h6 style="margin: 20px 15px 0px 15px;">Date of Birth</h6>
+        <form class="form-floating"> <input type="date" class="form-control" id="floatingInputValue" placeholder="DOB"
+                value=""> <label for="floatingInputValue">DOB</label>
+        </form>
+        <button id="onb-back2" class="btn btn-primary">Back</button>
+        <button id="onb-next2" class="btn btn-primary">Next</button>
+    </div>
+    <div id="onb3" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext3" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped
+                    progress-bar-animated bg-success" role="progressbar" style="width: 32%" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div id="onb3" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext3" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped
-                    progress-bar-animated bg-success" role="progressbar"
-                    style="width: 32%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h6 style="margin: 10px 15px;">Address</h6>
-            <form class="onboard form-floating"> <input type="address"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="Street Address" value=""> <label
-                    for="floatingInputValue">Street Address</label> </form>
-            <form class="onboard form-floating"> <input type="city"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="City" value=""> <label
-                    for="floatingInputValue">City</label> </form>
-            <form class="onboard form-floating"> <input type="state"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="State" value=""> <label
-                    for="floatingInputValue">State</label> </form>
-            <form class="onboard form-floating"> <input type="zip"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="Zip Code" value=""> <label
-                    for="floatingInputValue">Zip Code</label> </form>
-            <h6 style="margin: 20px 15px 0px 15px;">Phone Number</h6>
-            <form class="form-floating"> <input type="phone"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="(xxx)-xxx-xxxx" value=""> <label
-                    for="floatingInputValue">(xxx)-xxx-xxxx</label> </form>
-            <button id="onb-back3" class="btn btn-primary">Back</button>
-            <button id="onb-next3" class="btn btn-primary">Next</button>
+        <h6 style="margin: 10px 15px;">Address</h6>
+        <form class="onboard form-floating"> <input type="address" class="form-control" id="floatingInputValue"
+                placeholder="Street Address" value=""> <label for="floatingInputValue">Street Address</label> </form>
+        <form class="onboard form-floating"> <input type="city" class="form-control" id="floatingInputValue"
+                placeholder="City" value=""> <label for="floatingInputValue">City</label> </form>
+        <form class="onboard form-floating"> <input type="state" class="form-control" id="floatingInputValue"
+                placeholder="State" value=""> <label for="floatingInputValue">State</label> </form>
+        <form class="onboard form-floating"> <input type="zip" class="form-control" id="floatingInputValue"
+                placeholder="Zip Code" value=""> <label for="floatingInputValue">Zip Code</label> </form>
+        <h6 style="margin: 10px 15px 0px 15px;">Phone Number</h6>
+        <form class="onboard form-floating"> <input type="phone" class="form-control" id="floatingInputValue"
+                placeholder="(xxx)-xxx-xxxx" value=""> <label for="floatingInputValue">(xxx)-xxx-xxxx</label> </form>
+        <button id="onb-back3" class="btn btn-primary">Back</button>
+        <button id="onb-next3" class="btn btn-primary">Next</button>
+    </div>
+    <div id="onb4" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext4" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped
+                    progress-bar-animated progress-bar-animated bg-success" role="progressbar" style="width: 48%"
+                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div id="onb4" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext4" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped
-                    progress-bar-animated progress-bar-animated bg-success"
-                    role="progressbar" style="width: 48%"
-                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h6 style="margin: 25px 15px 0px 15px;">SSN</h6>
-            <form class="form-floating"> <input type="password"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="xxx-xx-xxxx" value=""> <label
-                    for="floatingInputValue">xxx-xx-xxxx</label> </form>
-            <button id="onb-back4" class="btn btn-primary">Back</button>
-            <button id="onb-next4" class="btn btn-primary">Next</button>
+        <h6 style="margin: 25px 15px 0px 15px;">SSN</h6>
+        <form class="onboard form-floating"> <input type="password" class="form-control" id="floatingInputValue"
+                placeholder="xxx-xx-xxxx" value=""> <label for="floatingInputValue">xxx-xx-xxxx</label> </form>
+        <button id="onb-back4" class="btn btn-primary">Back</button>
+        <button id="onb-next4" class="btn btn-primary">Next</button>
+    </div>
+    <div id="onb5" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext5" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped
+                    progress-bar-animated bg-success" role="progressbar" style="width: 54%" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div id="onb5" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext5" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped
-                    progress-bar-animated bg-success" role="progressbar"
-                    style="width: 54%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
+        <h6 style="margin: 20px 15px 0px 15px;">Select All of the Following
+            Which Apply to You</h6>
+        <div class="row">
+            <div class="col-8 holdings-text" style="margin-top: 16px;">
+                None of these apply to me
             </div>
-            <h6 style="margin: 20px 15px 0px 15px;">Select All of the Following
-                Which Apply to You</h6>
-            <div class="row">
-                <div class="col-8 holdings-text">
-                    None of these apply to me
-                </div>
-                <div class="col-2">
-                    <label class="holdings-switch switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="col-8 holdings-text">
-                    I am affiliated or work with a broker dealer
-                </div>
-                <div class="col-2">
-                    <label class="holdings-switch switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="col-8 holdings-text">
-                    I have been notified by the IRS that I am
-                    subject to
-                    backup
-                    withholding
-                </div>
-                <div class="col-2">
-                    <label class="holdings-switch switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="col-8 holdings-text">
-                    I am a 10% shareholder or director of a
-                    publicly traded
-                    company
-                </div>
-                <div class="col-2">
-                    <label class="holdings-switch switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+            <div class="col-2">
+                <label class="holdings-switch switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
             </div>
-            <button id="onb-back5" class="btn btn-primary">Back</button>
-            <button id="onb-next5" class="btn btn-primary">Next</button>
+            <div class="col-8 holdings-text">
+                I am affiliated or work with a broker dealer
+            </div>
+            <div class="col-2">
+                <label class="holdings-switch switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="col-8 holdings-text">
+                I have been notified by the IRS that I am
+                subject to
+                backup
+                withholding
+            </div>
+            <div class="col-2">
+                <label class="holdings-switch switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="col-8 holdings-text">
+                I am a 10% shareholder or director of a
+                publicly traded
+                company
+            </div>
+            <div class="col-2">
+                <label class="holdings-switch switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </div>
-        <div id="onb6" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext6" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <div class="progress">
-                <div class="progress-bar
+        <button id="onb-back5" class="btn btn-primary">Back</button>
+        <button id="onb-next5" class="btn btn-primary">Next</button>
+    </div>
+    <div id="onb6" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext6" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <div class="progress">
+            <div class="progress-bar
                     progress-bar-striped
-                    progress-bar-animated bg-success" role="progressbar"
-                    style="width: 80%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h6 style="margin: 15px 0px 0px 0px; text-align: center;">Almost
-                There!
-                Connect Your Bank</h6>
-            <button id="plaid-connectbutt" class="btn" style="margin-left:
+                    progress-bar-animated bg-success" role="progressbar" style="width: 80%" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h6 style="margin: 15px 0px 0px 0px; text-align: center;">Almost
+            There!
+            Connect Your Bank</h6>
+        <button id="plaid-connectbutt" class="btn" style="margin-left:
                 62px;">Connect
-                with plaid</button>
-            <button id="man-bankbutt" class="btn" style="margin-left: 48px;">Connect
-                bank
-                manually</button>
-            <button id="onb-back6" class="btn btn-primary" style="margin-top:
-                235px;">Back</button>
-        </div>
-        <div id="man-bank" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext7" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <h6 style="margin: 20px 15px 0px 15px;">Banking Information</h6>
-            <form class="form-floating"> <input type="password"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="Account Number" value=""> <label
-                    for="floatingInputValue">Account Number</label> </form>
-            <form class="form-floating"> <input type="routingNum"
-                    class="form-control" id="floatingInputValue"
-                    placeholder="Routing Number" value=""> <label
-                    for="floatingInputValue">Routing Number</label> </form>
-            <button id="con-man-bank" class="btn
+            with plaid</button>
+        <button id="man-bankbutt" class="btn" style="margin-left: 48px;">Connect
+            bank
+            manually</button>
+        <button id="onb-back6" class="btn btn-primary" style="margin-top:
+                195px;">Back</button>
+    </div>
+    <div id="man-bank" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext7" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <h6 style="margin: 20px 15px 0px 15px;">Banking Information</h6>
+        <form class="form-floating"> <input type="password" class="form-control" id="floatingInputValue"
+                placeholder="Account Number" value=""> <label for="floatingInputValue">Account Number</label> </form>
+        <form class="form-floating"> <input type="routingNum" class="form-control" id="floatingInputValue"
+                placeholder="Routing Number" value=""> <label for="floatingInputValue">Routing Number</label> </form>
+        <button id="con-man-bank" class="btn
                 btn-primary">Confirm</button>
-        </div>
-        <div id="onb7" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext8" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <div class="progress">
-                <div class="progress-bar
+    </div>
+    <div id="onb7" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext8" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <div class="progress">
+            <div class="progress-bar
                     progress-bar-striped
-                    progress-bar-animated bg-success" role="progressbar"
-                    style="width: 96%" aria-valuenow="20"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h4 style="text-align: center; margin-top: 20px;">All Set Up!<br>Welcome
-                to Wealth Wise</h4>
-            <button id="complete-onb" class="onbdone btn
-                btn-primary">Done</button>
+                    progress-bar-animated bg-success" role="progressbar" style="width: 96%" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100"></div>
         </div>
+        <h4 style="text-align: center; margin-top: 20px;">All Set Up!<br>Welcome
+            to Wealth Wise</h4>
+        <button id="complete-onb" class="onbdone btn
+                btn-primary">Done</button>
+    </div>
 
-        <!-- BEGINNING OF MAIN DIV -->
-        <div id="home" class="hide-div">
-            <nav class="navbar nav-override navbar-light bg-light">
-                <img
-                    src="images/wealth_wise_logo-removebg-preview-removebg-preview.png"
-                    width="60" height="60" style="margin:-16px 6px"
-                    class="d-inline-block align-top" alt="">
-                <button type="button" class="btn-close d-inline-block align-top"
-                    id="close-ext9" aria-label="Close"
-                    style="margin-right:10px"></button>
-            </nav>
-            <div class="navbar">
-                <div class="nav-item home-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" fill="currentColor" class="bi bi-house"
-                        viewBox="0 0 16 16">
-                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0
+    <!-- BEGINNING OF MAIN DIV -->
+    <div id="home" class="hide-div">
+        <nav class="navbar nav-override navbar-light bg-light">
+            <img src="images/wealth_wise_logo-removebg-preview-removebg-preview.png" width="60" height="60"
+                style="margin:-16px 6px" class="d-inline-block align-top" alt="">
+            <button type="button" class="btn-close d-inline-block align-top" id="close-ext9" aria-label="Close"
+                style="margin-right:10px"></button>
+        </nav>
+        <div class="navbar">
+            <div class="nav-item home-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+                    viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0
                             0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5
                             1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0
                             .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0
                             0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0
                             1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
-                        </svg>
-                    </div>
-                    <div class="nav-item tag-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-tag"
-                            viewBox="0 0 16 16">
-                            <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3
+                </svg>
+            </div>
+            <div class="nav-item tag-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag"
+                    viewBox="0 0 16 16">
+                    <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3
                                 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
-                                <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0
+                    <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0
                                     0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414
                                     0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0
                                     5.586 7 7L13.586 9l-7-7H2v4.586z" />
-                                </svg>
-                            </div>
-                            <div class="nav-item person-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor"
-                                    class="bi bi-person"
-                                    viewBox="0
+                </svg>
+            </div>
+            <div class="nav-item person-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                    viewBox="0
                                     0 16
                                     16">
-                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0
                                         6Zm2-3a2
                                         2 0
                                         1
@@ -338,24 +272,22 @@
                                         10.289 10 8 10c-2.29 0-3.516.68-4.168
                                         1.332-.678.678-.83
                                         1.418-.832 1.664h10Z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <button id="logout" class="btn btn-primary">Log Out</button>
-                        </div>
-                        <!-- END OF MAIN DIV -->
+                </svg>
+            </div>
+        </div>
+        <button id="logout" class="btn btn-primary">Log Out</button>
+    </div>
+    <!-- END OF MAIN DIV -->
 
-                        <script src="popup.js"></script>
-                        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                        <script
-                            src="https://code.jquery.com/jquery-1.12.4.min.js"
-                            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-                            crossorigin="anonymous"></script>
-                        <!-- Include all compiled plugins (below), or include individual files as needed -->
-                        <script
-                            src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-                            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-                            crossorigin="anonymous"></script>
-                    </body>
+    <script src="popup.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+</body>
 
-                </html>
+</html>
