@@ -17,7 +17,7 @@ body {
 #onb7 {
   height: 100%;
   margin: 0;
-  background-image: url("wealth_wise_logo.png");
+  background-image: url("images/wealth_wise_logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,6 +128,15 @@ input:checked+.slider:before {
   border-color: #1c712f;
   margin-left: 10px;
   margin-top: 20px;
+}
+
+#man-bank {
+  color: #000;
+  background-color: #fff;
+  border-color: gray;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 0;
 }
 
 .form-group {
