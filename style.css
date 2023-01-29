@@ -286,7 +286,7 @@ input:checked+.slider:before {
 }
 
 #tab-account {
-  height: 355px;
+  height: 455px;
   overflow-y: auto;
 }
 
