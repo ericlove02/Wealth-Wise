@@ -53,9 +53,7 @@ body {
 
 .form-control:hover {
   background: transparent;
-  outline: none;
   box-shadow: none;
-  border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* The switch - the box around the slider */
@@ -161,4 +159,8 @@ input:checked+.slider:before {
 
 .form-row {
   margin: 0px 10px 10px 10px;
+}
+
+.form-floating {
+  margin: 10px 14px;
 }
