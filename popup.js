@@ -23,7 +23,7 @@ window.onload = async function main() {
         pageRewrite("onb2", "onb3", "onb4", "onb-back3", "onb-next3");
         pageRewrite("onb3", "onb4", "onb5", "onb-back4", "onb-next4");
         pageRewrite("onb4", "onb5", "onb6", "onb-back5", "onb-next5");
-        pageRewrite("", "onb6", "man-bank", "", "man-bankbutt");
+        pageRewrite("onb5", "onb6", "man-bank", "onb-back6", "man-bankbutt");
         pageRewrite("", "man-bank", "onb7", "", "con-man-bank");
         pageRewrite("", "onb7", "home", "", "complete-onb");
         pageRewrite("onb5", "onb6", "onb7", "onb-back6", "");
