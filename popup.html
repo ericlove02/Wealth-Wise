@@ -352,12 +352,13 @@
                             </div>
 
                             <div class="" id="tab-home">
+                                <img src='https://media.tenor.com/sfTuw8H8zUUAAAAC/money-flying.gif'
+                                width="150" height="150" class="moneh" style="margin-top: 20px;">
                                 <div class="line">
-                                    <h2 class='lineUp'>Your money's working hard</h2>
+                                    <h2 class='lineUp'>Your money's working hard...</h2>
                                 </div>
-                                <div class = "counter">
-                                    
-                                </div>
+                                <div class = "counter"></div>
+                                <!-- <p id="nbr">50</p> -->
                             </div>
                             <div class=" hide-div" id="tab-tag">
                                 Codes
@@ -394,6 +395,15 @@
 
                                 </div>
                                 <!-- END OF MAIN DIV -->
+
+                                <script>
+                                    const genNumber = () => {
+                                    document.querySelector("div").style.setProperty("--percent", Math.random());
+                                    };
+
+                                    setInterval(genNumber, 2000);
+                                    setTimeout(genNumber);
+                                </script>
 
                                 <script src="popup.js"></script>
                                 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
