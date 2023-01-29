@@ -118,3 +118,17 @@ body {
   .slider.round:before {
     border-radius: 50%;
   } 
+
+  .btn, .btn-primary{
+    color: #fff;
+    background-color: #28a745;
+    border-color: #1c712f;
+
+  }
+
+  .btn:hover, .btn-primary:hover{
+    color: #fff;
+    background-color: #1c712f;
+    border-color: #1c712f;
+
+  }
