@@ -125,7 +125,7 @@ input:checked+.slider:before {
   background-color: #28a745;
   border-color: #1c712f;
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #plaid-connectbutt,
@@ -172,7 +172,9 @@ input:checked+.slider:before {
 }
 
 .holdings-text {
-  margin: 10px 0px 10px 10px;
+  margin: 8px 0px 8px 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .holdings-switch {
@@ -208,23 +210,30 @@ input:checked+.slider:before {
   width: 100%;
 }
 
+.nav-override {
+  width: 100% !important;
+  float: none !important;
+  position: initial !important;
+  background-color: #ededed !important;
+}
+
 .navbar .nav-item {
   width: 33%;
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 10px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .navbar .nav-item:hover {
-  background-color: #ddd;
-  color: black;
+  color: #28a745;
 }
 
-.navbar .nav-item.active {
-  background-color: #04AA6D;
-  color: white;
+
+.progress {
+  margin: 0;
+  border-radius: 0;
 }
