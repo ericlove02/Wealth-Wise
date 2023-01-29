@@ -175,7 +175,7 @@ input:checked+.slider:before {
 
 .onboard.form-floating>.form-control,
 .onboard.form-floating>.form-control-plaintext {
-  padding: 0rem 0.75rem;
+  padding: 0rem 0.75rem -.25rem;
 }
 
 .onboard.form-floating>.form-control,
