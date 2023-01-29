@@ -22,7 +22,8 @@
                 "content.js"
             ],
             "matches": [
-                "https://www.amazon.com/gp/buy/spc/handlers/display.html*"
+                "https://www.amazon.com/gp/buy/spc/handlers/display.html*",
+                "https://secure.asos.com/us/*"
             ]
         }
     ]
