@@ -22,6 +22,11 @@ const fetchCouponsSimplyCodes = async () => {
                 coupons.push(tempArr[1].trim())
             }
         });
+        $('.mr10').each((_idx, el) => {
+            const saving = $(el).text() // type string
+            // console.log(saving);
+            savings.push(saving);
+        });
         return coupons;
     } catch (error) {
         throw error;
