@@ -17,7 +17,7 @@ body {
 #onb7 {
   height: 100%;
   margin: 0;
-  background-image: url("https://t4.ftcdn.net/jpg/01/41/94/53/360_F_141945349_ocGfNKfPM3uc1A2LrNtodZq7KV9sWzNB.jpg");
+  background-image: url("wealth_wise_logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,10 +127,11 @@ input:checked+.slider:before {
   background-color: #28a745;
   border-color: #1c712f;
   margin-left: 10px;
+  margin-top: 20px;
 }
 
 .form-group {
-  margin: 20px 10px;
+  margin: 20px 10px 0px 10px;
 }
 
 .btn:hover,
