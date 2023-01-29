@@ -45,7 +45,7 @@ window.onload = async function main() {
     if (typeof invamt == 'undefined') {
         invamt = "0.00";
     }
-    document.getElementById("invest-amt").innerText = invamt;
+    document.getElementById("invest-amt").innerText = (Math.round(invamt * 100) / 100).toFixed(2);
 
     pageRewrite("tab-account", "tab-home", "tab-tag", "person-butt", "tag-butt");
     pageRewrite("tab-account", "tab-tag", "tab-home", "person-butt", "home-butt");
