@@ -126,7 +126,7 @@ input:checked+.slider:before {
   color: #fff;
   background-color: #28a745;
   border-color: #1c712f;
-
+  margin-left: 10px;
 }
 
 .form-group {
