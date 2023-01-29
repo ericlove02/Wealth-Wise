@@ -23,9 +23,11 @@ window.onload = async function main() {
         pageRewrite("onb2", "onb3", "onb4", "onb-back3", "onb-next3");
         pageRewrite("onb3", "onb4", "onb5", "onb-back4", "onb-next4");
         pageRewrite("onb4", "onb5", "onb6", "onb-back5", "onb-next5");
-        pageRewrite("onb5", "onb6", "onb7", "onb-back6", "");
         pageRewrite("", "onb6", "man-bank", "", "man-bankbutt");
+        pageRewrite("", "man-bank", "onb7", "", "con-man-bank");
+        pageRewrite("onb5", "onb6", "onb7", "onb-back6", "");
         pageRewrite("onb6", "onb7", "", "onb-back7", "");
+        pageRewrite("", "man-bank", "home", "", "complete-onb");
     }
 }
 
@@ -52,6 +54,7 @@ function setOnboardingStatus(value) {
 function pageRewrite(last, curr, next, bacbutt, forbutt) {
     if (forbutt != "" && next != "") {
         document.getElementById(forbutt).addEventListener("click", () => {
+            console.log("pressed butt w id" + forbutt);
             document.getElementById(curr).classList.add('hide-div');
             document.getElementById(next).classList.remove('hide-div');
         });
