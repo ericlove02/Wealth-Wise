@@ -1,10 +1,22 @@
 window.onload = async function main() {
     // add the event listeners to the buttons
-
+    // document.getElementById("complete-onb").addEventListener("click", () => {
+    //     console.log("saving...");
+    //     setOnboardingStatus(true);
+    //     return;
+    // });
+    // document.getElementById("logout").addEventListener("click", () => {
+    //     console.log("saving...");
+    //     setOnboardingStatus(false);
+    //     window.close();
+    //     return;
+    // });
     document.getElementById("close-ext").addEventListener("click", () => { window.close(); return; });
 
     if (await getStorage("onboardingStatus")) {
-
+        document.getElementById("onb1").classList.add('hide-div'); // hide welcome div
+        // document.getElementById("onb").classList.remove('hide-div'); // show the info div
+        // document.getElementById("total").innerText = await getStorage("grandTotal");
     } else {
         pageRewrite("", "onb1", "onb2", "", "onb-next1");
         pageRewrite("onb1", "onb2", "onb3", "onb-back2", "onb-next2");
